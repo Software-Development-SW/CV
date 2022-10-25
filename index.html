@@ -11,6 +11,8 @@
 
     <script type="module" src="./scripts/typescript/course.js" ></script>
     <script type="module" src="./scripts/typescript/dataCourses.js" ></script>
+    <script type="module" src="./scripts/typescript/student.js" ></script>
+    <script type="module" src="./scripts/typescript/dataStudents.js" ></script>
     <script type="module" src="./scripts/typescript/main.js"></script>
 
     <div class="container general">
@@ -21,32 +23,7 @@
                 <div class="datos-personales">
                     <h2>Datos Personales</h2>
                     <table class="table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Código</td>
-                                <td>202116614</td>
-                            </tr>
-                            <tr>
-                                <td>Cédula</td>
-                                <td>1108324590</td>
-                            </tr>
-                            <tr>
-                                <td>Edad</td>
-                                <td>18 años</td>
-                            </tr>
-                            <tr>
-                                <td>Dirección</td>
-                                <td>Calle 12D #2-08</td>
-                            </tr>
-                            <tr>
-                                <td>Teléfono</td>
-                                <td>3122773641</td>
-                            </tr>
+                        <tbody id="students">
                         </tbody>    
                     </table>
                 </div>
@@ -58,9 +35,12 @@
                         <div class="form-row">
                         <div class="col">
                             <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                            <input type="text" class="form-control" id="min-credits" placeholder="Créditos maximos">
+                            <input type="text" class="form-control" id="max-credits" placeholder="Créditos minimos">
                         </div>
                         <div class="col">
-                            <button type="button" id="button-filterByName" class="btn btn-dark">Aplicar</button>
+                            <button type="button" id="button-filterByName" class="btn btn-dark">Filtrar por nombre</button>
+                            <button type="button" id="button-filterByCredits" class="btn btn-dark">Filtrar por créditos</button>
                         </div>
                         </div>
                     </form>
